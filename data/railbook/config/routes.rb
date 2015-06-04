@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'view/keyword'
+
+  get 'view/form_tag'
+
+  get 'view/form_for'
+
+  get 'view/filed'
+
+  get 'view/html5'
+
   resources :fan_comments
   resources :reviews
   resources :authors

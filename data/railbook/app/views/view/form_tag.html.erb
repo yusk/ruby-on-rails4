@@ -1,0 +1,32 @@
+<h1>View#form_tag</h1>
+<p>Find me in app/views/view/form_tag.html.erb</p>
+
+<%= form_tag(action: :create) do %>
+	<div class="field">
+		<%= label :book, :isbn, size: 25 %><br />
+		<%= text_field :book, :isbn, size: 25 %>
+	</div>
+	<div class="field">
+		<%= label :book, :title, size: 25 %><br />
+		<%= text_field :book, :title, size: 25 %>
+	</div>
+	<div class="field">
+		<%= label :book, :price, size: 25 %><br />
+		<%= number_field :book, :price, size: 25 %>
+	</div>
+	<div class="field">
+		<%= label :book, :publish, size: 25 %><br />
+		<%= text_field :book, :publish, size: 25 %>
+	</div>
+	<div class="field">
+		<%= label :book, :published, size: 25 %><br />
+		<%= date_select :book, :published, size: 25 %>
+	</div>
+	<div class="field">
+		<%= label :book, :cd, size: 25 %><br />
+		<%= check_box :book, :cd, size: 25 %>
+	</div>
+	<div class="actions">
+		<%= submit_tag %>
+	</div>
+<% end %>
